@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Avenir;
+  src: url("Avenir-Book.21abf061.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("Avenir-Heavy.9246a2b0.ttf");
+  font-weight: 900;
+}
+
+:root {
+  --basic-color: #3d4e61;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: inherit;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.search-bar {
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.search-bar__big {
+  margin: 20px 8px;
+}
+
+.search-bar__label {
+  position: relative;
+}
+
+.search-bar__label:before {
+  content: "";
+  z-index: 10;
+  background-image: url("Search.f4d21c8a.svg");
+  position: absolute;
+}
+
+.search-bar__label--big:before {
+  width: 19px;
+  height: 19px;
+  top: 1px;
+  left: 26px;
+}
+
+.search-bar__input {
+  color: var(--basic-color);
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 62px;
+  font-size: 16px;
+  position: relative;
+  box-shadow: 0 1px 8px #3d4e611a;
+}
+
+.search-bar__input:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search-bar__input:focus {
+  background: linear-gradient(#fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  outline: none;
+  font-weight: 600;
+}
+
+.search-bar__input::placeholder {
+  color: var(--basic-color);
+  font-weight: 400;
+}
+
+.search-bar__label--small:before {
+  background-size: cover;
+  width: 11px;
+  height: 11px;
+  top: 6px;
+  left: 13px;
+}
+
+.search-bar__input--small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 33px;
+  font-size: 14px;
+  position: relative;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
